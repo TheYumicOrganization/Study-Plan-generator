@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Today's Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Today's Study Planner</h1>
+  <p>Enter your details and get a plan for today.</p>
+
+  <form id="plannerForm">
+    <label>
+      Class:
+      <select id="class">
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </label>
+
+    <label>
+      Subjects (comma separated):
+      <input type="text" id="subjects" placeholder="Maths, Science, English">
+    </label>
+
+    <label>
+      Hours available today:
+      <input type="number" id="hours" min="1" max="10">
+    </label>
+
+    <label>
+      Weak subject (optional):
+      <input type="text" id="weak" placeholder="Maths">
+    </label>
+
+    <button type="submit">Generate Plan</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
